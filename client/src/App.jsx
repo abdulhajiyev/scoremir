@@ -1,14 +1,13 @@
-import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Mes from './Mes';
-import ValueDisplay from './ValueDisplay';
+import DisplayScores from './DisplayScores';
+import TeamScore from './TeamScore';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" exact element={<Mes/>} />
-        <Route path="/value" element={<ValueDisplay/>} />
+        <Route path="/" exact element={<TeamScore/>} />
+        <Route path="/value" element={<DisplayScores/>} />
       </Routes>
     </BrowserRouter>
   );
